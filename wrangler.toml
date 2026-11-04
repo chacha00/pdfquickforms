@@ -1,0 +1,21 @@
+# Cloudflare Pages project config (static site + /functions + D1).
+name = "pdfquick-forms"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pdfquick-forms"
+# Replace with the id printed by: npx wrangler d1 create pdfquick-forms
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"
+
+# Non-secret settings. Secrets (STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, LICENSE_SECRET,
+# RESEND_API_KEY) go in the Cloudflare dashboard or `wrangler pages secret put` — never here.
+[vars]
+PAYMENTS_ENABLED = "false"
+# Stripe as merchant of record (tax, fraud, disputes). Requires accepting Managed Payments terms in the Dashboard.
+STRIPE_MANAGED_PAYMENTS = "true"
+PUBLIC_ORIGIN = "https://forms.pdfquick.app"
+EMAIL_FROM = ""

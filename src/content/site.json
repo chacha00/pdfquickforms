@@ -1,0 +1,455 @@
+{
+  "site": {
+    "name": "PDFQuick Forms",
+    "origin": "https://forms.pdfquick.app",
+    "tagline": "Make Any PDF Fillable. Free. Fast. Easy."
+  },
+  "pages": {
+    "/": {
+      "title": "Create Fillable PDF Forms Online — Free | PDFQuick Forms",
+      "description": "Make any PDF fillable or build a new form from scratch. Add real text fields, checkboxes, radio buttons and dropdowns, then download an interactive PDF. Free, no account.",
+      "h1": "Create Fillable PDF Forms Online — Free"
+    },
+    "/free-pdf-templates": {
+      "title": "Free Fillable PDF Form Templates | PDFQuick Forms",
+      "description": "Free, editable form templates: client intake, job application, maintenance request, permission slip, invoice and more. Customize them and download a fillable PDF.",
+      "h1": "Free fillable PDF form templates"
+    },
+    "/guides": {
+      "title": "PDF Form Guides — How-To Articles | PDFQuick Forms",
+      "description": "Step-by-step guides for making PDFs fillable, adding checkboxes and text fields, building reusable intake forms and filling PDF forms online.",
+      "h1": "PDF form guides"
+    },
+    "/privacy": {
+      "title": "Privacy Policy | PDFQuick Forms",
+      "description": "How PDFQuick Forms handles your documents and data. Your PDFs are processed in your browser and are not uploaded.",
+      "h1": "Privacy policy"
+    },
+    "/terms": {
+      "title": "Terms of Use | PDFQuick Forms",
+      "description": "The terms for using PDFQuick Forms, including templates, signature images, warranty and liability.",
+      "h1": "Terms of use"
+    },
+    "/cookies": {
+      "title": "Cookie Policy | PDFQuick Forms",
+      "description": "What PDFQuick Forms stores in your browser, and the cookies used by advertising when it is enabled.",
+      "h1": "Cookie policy"
+    },
+    "/advertising": {
+      "title": "Advertising Disclosure | PDFQuick Forms",
+      "description": "How PDFQuick Forms is funded, where ads may appear, and where they never appear.",
+      "h1": "Advertising disclosure"
+    },
+    "/contact": {
+      "title": "Contact | PDFQuick Forms",
+      "description": "How to contact PDFQuick Forms about support, privacy or data deletion.",
+      "h1": "Contact"
+    },
+    "/status": {
+      "title": "Feature Status | PDFQuick Forms",
+      "description": "Which PDFQuick Forms features are live and tested, which are in progress, and which are not built yet.",
+      "h1": "Feature status"
+    },
+    "/premium": {
+      "title": "Premium Form Template Packs — One-Time Purchase | PDFQuick Forms",
+      "description": "Optional premium packs of ready-made, fully editable fillable PDF forms. Pay once — no subscription, no account. Everything else in PDFQuick Forms stays free.",
+      "h1": "Premium template packs"
+    }
+  },
+  "landings": [
+    {
+      "path": "/make-pdf-fillable",
+      "start": "fillable",
+      "title": "Make a PDF Fillable Online — Free, No Account | PDFQuick Forms",
+      "description": "Turn any PDF into a fillable form. Upload it, add interactive text fields, checkboxes, radio buttons and dropdowns, and download a real fillable PDF. Processed in your browser.",
+      "h1": "Make a PDF fillable",
+      "intro": "Upload a PDF you already have — an application, a checklist, an order form — and turn it into a form people can fill in on screen. The fields you add are genuine PDF form fields that work in Adobe Acrobat Reader, web browsers and macOS Preview.",
+      "sections": [
+        {
+          "h": "How it works",
+          "steps": [
+            "Upload your PDF. It opens in the editor without leaving your device.",
+            "Optional: click Auto-detect fields to get suggestions for blank lines, checkbox symbols and labels like “Name:”. Review each suggestion.",
+            "Pick a field type and click where it belongs. Drag the Move tab to reposition it and the corner handle to resize it.",
+            "Name each field and set options like Required or a list of choices.",
+            "Click Preview to try the form, then Download Fillable PDF."
+          ]
+        },
+        {
+          "h": "What gets preserved",
+          "p": "Your original pages are kept as they are: text, images, fonts, page sizes and orientation. If the PDF already has form fields, they're kept too and shown as Existing — PDFQuick Forms never silently flattens them."
+        },
+        {
+          "h": "Limitations",
+          "list": [
+            "Password-protected PDFs need to be unlocked first.",
+            "Auto-detect reads the PDF's text. It can't see lines drawn as graphics or text in scanned images yet.",
+            "Changing a digitally signed PDF invalidates its signature — you'll be warned."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Will the fields really be fillable in other apps?",
+          "a": "Yes. PDFQuick Forms writes standard AcroForm fields — the same kind Acrobat creates — so the downloaded PDF can be filled in Adobe Acrobat Reader, Chrome, Edge, Firefox and macOS Preview. Readers differ in small ways (for example, only Acrobat enforces date formats)."
+        },
+        {
+          "q": "Is my PDF uploaded to a server?",
+          "a": "No. The PDF is opened, edited and saved in your browser. Nothing is sent to PDFQuick Forms."
+        },
+        {
+          "q": "Does it cost anything?",
+          "a": "No. Making PDFs fillable and downloading them is free, with no watermark and no account."
+        }
+      ]
+    },
+    {
+      "path": "/create-fillable-pdf",
+      "start": "create",
+      "title": "Create a Fillable PDF From Scratch — Free Form Builder | PDFQuick Forms",
+      "description": "Build a new fillable PDF form from a blank page or template. Add headings, instructions and interactive fields, choose Letter, A4, Legal or custom size, and download.",
+      "h1": "Create a fillable PDF from scratch",
+      "intro": "Start with a blank page — or one of our free templates — and design a form that looks professional and works on any device. Add headings and instructions, then the fields people will fill in.",
+      "sections": [
+        {
+          "h": "Build your form",
+          "steps": [
+            "Choose a page size: US Letter, A4, Legal or a custom size, portrait or landscape.",
+            "Add headings, paragraphs, dividers, rectangles and your logo.",
+            "Add text fields, checkboxes, radio buttons, dropdowns, list boxes, date, email and phone fields, and a signature area.",
+            "Use snapping and alignment guides to line everything up. Add, duplicate, reorder and delete pages as you go.",
+            "Save the project in your browser to keep working later, then download the fillable PDF."
+          ]
+        },
+        {
+          "h": "Make it reusable",
+          "p": "Saved projects stay in your browser, so you can come back, change a question, and download a new version — useful for intake forms, checklists and registration forms you send out again and again."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use my own logo?",
+          "a": "Yes. Add an Image element and choose a PNG or JPG. It's embedded in the PDF."
+        },
+        {
+          "q": "Which fonts can I use?",
+          "a": "Helvetica, Times and Courier — the standard PDF fonts every reader has, in regular and bold. Text in these fonts supports Western European languages (including accents like é, ü and ñ) but not emoji or non-Latin scripts yet."
+        },
+        {
+          "q": "Can I save my form and edit it later?",
+          "a": "Yes. Save project stores it in this browser on this device. It isn't uploaded, so it won't appear on other devices."
+        }
+      ]
+    },
+    {
+      "path": "/fill-pdf-online",
+      "start": "fill",
+      "title": "Fill PDF Forms Online — Free, Private | PDFQuick Forms",
+      "description": "Fill out an existing fillable PDF in your browser: text fields, checkboxes, radio buttons and dropdowns. Download it editable or flattened. No upload, no account.",
+      "h1": "Fill a PDF form online",
+      "intro": "Got a PDF form to complete? Open it here, type your answers, tick the boxes, and download the completed document — ready to email or print.",
+      "sections": [
+        {
+          "h": "Editable or flattened?",
+          "p": "An editable filled PDF keeps your answers in the form fields, so you or someone else can still change them. A flattened PDF turns the answers into part of the page and removes the fields — nobody can change them, and it prints the same everywhere. Choose flattened for final copies you send."
+        },
+        {
+          "h": "If your PDF isn't fillable",
+          "p": "Many PDFs are just pictures of forms. If PDFQuick Forms finds no fields, you can make the PDF fillable in one click and add the fields yourself."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Are my answers sent anywhere?",
+          "a": "No. The form is filled and saved in your browser. Your answers never reach PDFQuick Forms."
+        },
+        {
+          "q": "Why can't I change some fields?",
+          "a": "The form's author marked them read-only. PDFQuick Forms respects that."
+        }
+      ]
+    },
+    {
+      "path": "/add-text-fields-to-pdf",
+      "start": "fillable",
+      "tool": "text",
+      "title": "Add Text Fields to a PDF — Free Online | PDFQuick Forms",
+      "description": "Add typeable text boxes to any PDF. Single-line or multiline, with default values, max length, alignment and fonts. Download a fillable PDF for free.",
+      "h1": "Add text fields to a PDF",
+      "intro": "Put real, typeable text fields on top of any PDF so people can fill it in on screen instead of printing it.",
+      "sections": [
+        {
+          "h": "Text field options",
+          "list": [
+            "Single-line or multiline (for comments and addresses)",
+            "Default value and placeholder-free layout",
+            "Maximum number of characters",
+            "Left, center or right alignment; Helvetica, Times or Courier",
+            "Required and read-only flags",
+            "Special fields for email, phone and dates"
+          ]
+        },
+        {
+          "h": "Tips",
+          "p": "Give every field a clear name — PDF readers use it when exporting form data, and screen readers announce the label. Make multiline fields tall enough for the answer you expect; text is clipped, not resized."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Will the text field auto-shrink long answers?",
+          "a": "No. The font size you choose is fixed so the form stays consistent. Make the field wide enough, or switch on Multiline."
+        }
+      ]
+    },
+    {
+      "path": "/add-checkboxes-to-pdf",
+      "start": "fillable",
+      "tool": "checkbox",
+      "title": "Add Checkboxes to a PDF — Free Online | PDFQuick Forms",
+      "description": "Add clickable checkboxes and radio buttons to a PDF. Set default states, groups and required options, then download a fillable PDF. No account needed.",
+      "h1": "Add checkboxes to a PDF",
+      "intro": "Turn printed check squares into real, clickable checkboxes — or add radio buttons when only one answer is allowed.",
+      "sections": [
+        {
+          "h": "Checkboxes vs radio buttons",
+          "p": "Use checkboxes when someone may tick any number of options (“Select all that apply”). Use radio buttons when only one option in a group can be chosen (“Yes / No”). In PDFQuick Forms, radio buttons with the same group name are mutually exclusive."
+        },
+        {
+          "h": "Speed it up",
+          "p": "If the PDF already shows ☐ symbols, Auto-detect fields can suggest checkboxes in the right places. Select a checkbox and press Ctrl+D to duplicate it."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can a checkbox be required?",
+          "a": "Yes. Readers like Acrobat will warn when a required field is empty; not every reader enforces it."
+        }
+      ]
+    },
+    {
+      "path": "/add-signature-to-pdf",
+      "start": "fillable",
+      "tool": "signature",
+      "title": "Add a Signature Area to a PDF | PDFQuick Forms",
+      "description": "Add a signature line and an empty signature field to a PDF, or place a drawn or typed signature image. Free, in your browser.",
+      "h1": "Add a signature area to a PDF",
+      "intro": "Add a signing line with a caption and an empty signature field, so the form is ready to sign in a reader like Adobe Acrobat — or place an image of your drawn or typed signature.",
+      "sections": [
+        {
+          "h": "Two different things",
+          "list": [
+            "A signature field: an empty field that readers with signing support (such as Acrobat Reader) let the recipient sign digitally.",
+            "A signature image: a picture of your drawn or typed signature placed on the page."
+          ]
+        },
+        {
+          "h": "Important",
+          "p": "A signature image is not a cryptographic digital signature, and PDFQuick Forms doesn't provide identity verification, consent records or audit trails. Whether an image signature is acceptable depends on who you're sending the document to. For legally binding e-signature workflows, use a dedicated e-signature service."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can people sign the signature field in their browser?",
+          "a": "Browser PDF viewers usually show signature fields but can't sign them. Adobe Acrobat Reader can."
+        }
+      ]
+    },
+    {
+      "path": "/pdf-form-builder",
+      "start": "create",
+      "title": "Free PDF Form Builder — Drag and Drop | PDFQuick Forms",
+      "description": "A free drag-and-drop PDF form builder: text fields, checkboxes, radio buttons, dropdowns, list boxes, dates and signature areas. Multi-page, undo/redo, no account.",
+      "h1": "Free PDF form builder",
+      "intro": "A visual editor for PDF forms: drag fields onto the page, line them up with snapping guides, preview the form, and download a genuine fillable PDF.",
+      "sections": [
+        {
+          "h": "Everything you need",
+          "list": [
+            "Nine field types: text, checkbox, radio, dropdown, list box, date, email, phone, signature",
+            "Layout elements: headings, paragraphs, images and logos, dividers, rectangles",
+            "Multi-page forms: add, duplicate, reorder and delete pages",
+            "Zoom, fit to width or page, snap to grid and alignment guides",
+            "Undo and redo, keyboard shortcuts, and accessible controls that don't require dragging",
+            "Save projects in your browser; start from free templates"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I use it on my phone?",
+          "a": "Yes. The editor works on phones and tablets: tap a tool, tap the page, and use the bottom bar for properties and pages. Detailed layout work is easier on a larger screen."
+        }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "slug": "how-to-make-a-pdf-fillable",
+      "title": "How to Make a PDF Fillable (Free, Without Acrobat)",
+      "description": "A step-by-step guide to turning a flat PDF into a fillable form with real text fields and checkboxes — free and in your browser.",
+      "body": [
+        {
+          "h": "What “fillable” actually means",
+          "p": "A fillable PDF contains interactive form fields (the PDF standard calls them AcroForm fields). When you click one in a PDF reader, you can type into it or tick it, and the answer is saved inside the file. Many PDFs only look like forms: the boxes are printed lines, so you can't type into them. Making a PDF fillable means adding real fields on top of those lines."
+        },
+        {
+          "h": "Step 1: Open your PDF",
+          "p": "Go to Make a PDF Fillable and choose your file. It opens in the editor on your device; nothing is uploaded."
+        },
+        {
+          "h": "Step 2: Let Auto-detect help (optional)",
+          "p": "Click Auto-detect fields. PDFQuick Forms looks at the text on each page for underscore lines (“Name: ________”), checkbox symbols (☐) and labels followed by blank space, and suggests fields. Suggestions are highlighted in amber — accept the good ones, adjust or discard the rest. Detection uses the PDF's text, so it won't find boxes drawn as graphics or text in scanned images."
+        },
+        {
+          "h": "Step 3: Add the fields yourself",
+          "p": "Choose Text field, Checkbox or another type, and click on the page where it belongs. Drag the blue Move tab to reposition a field and the corner handle to resize it. With the keyboard, select a field and use the arrow keys (hold Shift for bigger steps)."
+        },
+        {
+          "h": "Step 4: Name your fields",
+          "p": "Each field needs a unique name. Good names — “Applicant name”, “Start date” — make the form easier to use with screen readers and when exporting data."
+        },
+        {
+          "h": "Step 5: Preview and download",
+          "p": "Click Preview to try the form, then Download Fillable PDF. PDFQuick Forms re-opens the result to check every field is there before you get it."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-add-checkboxes-to-a-pdf",
+      "title": "How to Add Checkboxes to a PDF",
+      "description": "Add clickable checkboxes and radio buttons to any PDF, and learn when to use each.",
+      "body": [
+        {
+          "h": "Checkbox or radio button?",
+          "p": "Checkboxes are independent: any number can be ticked. Radio buttons belong to a group and only one in the group can be selected. Use radio buttons for Yes/No questions and ratings; checkboxes for “select all that apply”."
+        },
+        {
+          "h": "Adding checkboxes",
+          "p": "Open your PDF in the editor, choose Checkbox, and click on each printed box. Set “Checked by default” in the properties panel if needed. Duplicate a checkbox with Ctrl+D to place a column of them quickly; use the snapping guides to keep them aligned."
+        },
+        {
+          "h": "Adding a radio group",
+          "p": "Choose Radio button and place the first option. In the properties panel, give the group a name (for example “Preferred contact”) and the option a value (“Email”). Click “Add option to this group” for each other choice."
+        },
+        {
+          "h": "Checking your work",
+          "p": "Use Preview to click through the options: in a radio group, selecting one option should clear the others."
+        }
+      ]
+    },
+    {
+      "slug": "create-fillable-form-without-adobe",
+      "title": "How to Create a Fillable PDF Form Without Adobe Acrobat",
+      "description": "Build a professional fillable PDF form from scratch for free, without installing Adobe Acrobat.",
+      "body": [
+        {
+          "h": "You don't need Acrobat to create forms",
+          "p": "Fillable PDF forms are an open standard. PDFQuick Forms creates the same kind of AcroForm fields Acrobat does, in your browser, for free."
+        },
+        {
+          "h": "Plan the form first",
+          "p": "List the information you need and group it into sections: contact details, the request itself, consent. Keep questions short. Decide which fields are required."
+        },
+        {
+          "h": "Build it",
+          "p": "Choose Create a New Form, pick a page size, and add a heading and a sentence of instructions. For each question, add a short label and the matching field: text for names, email and phone fields for contact details, a dropdown for a fixed list of choices, radio buttons for one choice, checkboxes for several."
+        },
+        {
+          "h": "Make it look professional",
+          "p": "Line fields up on a consistent left edge — the editor's alignment guides snap to other elements. Use one font family, keep labels the same size, and leave white space between sections."
+        },
+        {
+          "h": "Test it in more than one reader",
+          "p": "After downloading, open the PDF in your browser and in Adobe Acrobat Reader if you have it. Fill it in and save. Readers differ slightly: Acrobat enforces date formats and required fields; most browsers don't."
+        }
+      ]
+    },
+    {
+      "slug": "reusable-intake-forms",
+      "title": "How to Create Reusable Client Intake Forms",
+      "description": "Design an intake form once, reuse it for every new client, and keep it up to date.",
+      "body": [
+        {
+          "h": "Start from a template",
+          "p": "The free Client Intake Form template has contact details, project questions, a budget dropdown and a consent signature. Open it, delete what you don't need, and add your own questions."
+        },
+        {
+          "h": "Save the project",
+          "p": "Click Save project. The form is stored in this browser so you can change it later without starting over. Saved projects stay on this device — they aren't uploaded, and they won't appear in other browsers."
+        },
+        {
+          "h": "Send the fillable PDF",
+          "p": "Download the fillable PDF and send it to each new client. They can fill it in with any PDF reader — or with Fill a PDF Online — and send it back."
+        },
+        {
+          "h": "Keep field names stable",
+          "p": "If you ever collect answers with tools that read PDF form data, keep the field names the same between versions so the data lines up."
+        }
+      ]
+    },
+    {
+      "slug": "add-text-fields-to-existing-pdf",
+      "title": "How to Add Text Fields to an Existing PDF",
+      "description": "Add typeable text boxes to a PDF you already have, sized and styled to match the document.",
+      "body": [
+        {
+          "h": "Match the printed lines",
+          "p": "Open the PDF in the editor and zoom in. Place a Text field and resize it so it sits just above the printed line. The field's height should be about one and a half times the font size."
+        },
+        {
+          "h": "Choose the right field type",
+          "p": "Use Email and Phone fields for contact details — the editor checks the format during Preview. Use the Date field for dates; Acrobat Reader will enforce the format you choose. Switch on Multiline for addresses and comments."
+        },
+        {
+          "h": "Set limits",
+          "p": "Max characters is useful for codes and IDs. Read-only fields show a fixed value that the person filling in the form can't change."
+        },
+        {
+          "h": "Keep the original intact",
+          "p": "PDFQuick Forms adds fields on top of your pages; the original text, images and any existing form fields are preserved."
+        }
+      ]
+    },
+    {
+      "slug": "how-to-fill-out-pdf-forms-online",
+      "title": "How to Fill Out PDF Forms Online",
+      "description": "Fill in a PDF form in your browser and save an editable or flattened copy.",
+      "body": [
+        {
+          "h": "Open the form",
+          "p": "Go to Fill a PDF Online and choose the PDF. If it has form fields, they appear as boxes you can type into and options you can click."
+        },
+        {
+          "h": "Fill it in",
+          "p": "Click each field and type, tick checkboxes, choose radio options and pick from dropdowns. Required fields are marked, and you'll see how many are still empty."
+        },
+        {
+          "h": "Choose how to save",
+          "p": "Editable filled PDF keeps your answers in the fields — handy if you might change them. Flattened makes the answers part of the page and removes the fields, so nobody can alter them. Download and you're done."
+        },
+        {
+          "h": "No fields?",
+          "p": "If the PDF has no fillable fields, it's a flat form. Click “Make this PDF fillable” to add text fields and checkboxes where you need them, then fill those in."
+        }
+      ]
+    }
+  ],
+  "homeFaq": [
+    {
+      "q": "Is PDFQuick Forms really free?",
+      "a": "Yes. Creating, editing, filling and downloading forms is free, with no account, no watermark and no subscription. The site is supported by clearly labeled ads on informational pages — never inside the editor."
+    },
+    {
+      "q": "Are the fields real PDF form fields?",
+      "a": "Yes. Downloads contain genuine interactive AcroForm fields — text fields, checkboxes, radio buttons, dropdowns, list boxes and signature fields — not pictures of boxes. Every download is re-opened and checked before you get it."
+    },
+    {
+      "q": "Are my documents uploaded?",
+      "a": "No. PDFs are opened, edited and saved in your browser. Saved projects are stored in this browser only."
+    },
+    {
+      "q": "Which PDF readers work with the forms?",
+      "a": "Fields are standard PDF form fields, so they work in Adobe Acrobat Reader, Chrome, Edge, Firefox and macOS Preview. Some features, like enforced date formats and signing, depend on the reader."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Cloudflare Pages response headers.
+# CSP notes:
+#  - connect-src 'self': the app never sends documents anywhere. If you enable
+#    analytics (VITE_ANALYTICS_ENDPOINT), add that origin here.
+#  - worker-src blob: is required by PDF.js; 'wasm-unsafe-eval' lets PDF.js run
+#    its bundled WASM image decoders (JPEG 2000, JBIG2).
+#  - style-src 'unsafe-inline' is needed for React inline style attributes.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; frame-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Cross-Origin-Opener-Policy: same-origin
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/pdfjs/*
+  Cache-Control: public, max-age=604800

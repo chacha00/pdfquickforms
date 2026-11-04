@@ -1,0 +1,27 @@
+{
+  "currency": "usd",
+  "products": [
+    {
+      "id": "pack-small-business",
+      "kind": "template_pack",
+      "packId": "small-business",
+      "name": "Small Business Forms Pack",
+      "description": "Eight professionally laid-out, fully editable fillable forms for running a small business.",
+      "amount": 499,
+      "currency": "usd",
+      "active": true,
+      "includes": [
+        "Purchase Order",
+        "Quote / Estimate",
+        "Work Order",
+        "Expense Report",
+        "Weekly Timesheet",
+        "Incident Report",
+        "Vendor Application",
+        "Client Onboarding Checklist"
+      ],
+      "taxCode": "txcd_10000000"
+    }
+  ],
+  "_notes": "taxCode must be a Managed Payments-eligible digital-goods tax code (docs.stripe.com/payments/managed-payments/eligibility). Confirm the classification for your products."
+}
