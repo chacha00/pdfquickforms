@@ -37,7 +37,7 @@ export interface Env {
   PAYMENTS_ENABLED?: string;
   /** "false" to create sessions without Managed Payments (Stripe as merchant of record). Default on. */
   STRIPE_MANAGED_PAYMENTS?: string;
-  /** e.g. https://pdfquick-forms.pages.dev — used for redirect URLs and the Origin check. */
+  /** e.g. https://pdfquickforms.com — used for redirect URLs and the Origin check. */
   PUBLIC_ORIGIN?: string;
   /** Optional purchase-recovery email via Resend. */
   RESEND_API_KEY?: string;

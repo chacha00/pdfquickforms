@@ -17,5 +17,5 @@ migrations_dir = "migrations"
 PAYMENTS_ENABLED = "false"
 # Stripe as merchant of record (tax, fraud, disputes). Requires accepting Managed Payments terms in the Dashboard.
 STRIPE_MANAGED_PAYMENTS = "true"
-PUBLIC_ORIGIN = "https://pdfquick-forms.pages.dev"
+PUBLIC_ORIGIN = "https://pdfquickforms.com"
 EMAIL_FROM = ""

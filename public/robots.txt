@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pdfquick-forms.pages.dev/sitemap.xml
+Sitemap: https://pdfquickforms.com/sitemap.xml
