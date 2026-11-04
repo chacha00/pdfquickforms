@@ -1,4 +1,4 @@
-import { useEffect, useRef, type PointerEvent as RPointerEvent } from "react";
+import { useEffect, useLayoutEffect, useRef, type PointerEvent as RPointerEvent } from "react";
 import { Move, Sparkles } from "lucide-react";
 import { FieldControl, CSS_FONT, type ControlKind } from "../../components/fields/FieldControl";
 import { TYPE_LABEL, isField, validateValue, type El } from "../../lib/forms/model";
@@ -69,13 +69,12 @@ export function ElementBox(p: Props) {
   const label = elementLabel(el);
   const kind = controlKind(el);
 
-  useEffect(() => {
+  // Focus a newly placed field synchronously after it renders, so keys typed right away land in it.
+  // (The placing pointerdown calls preventDefault, so the browser won't move focus afterwards.)
+  useLayoutEffect(() => {
     if (!p.autoFocus) return;
-    const t = setTimeout(() => {
-      inputRef.current?.focus();
-      p.onFocused();
-    }, 0);
-    return () => clearTimeout(t);
+    inputRef.current?.focus();
+    p.onFocused();
   }, [p.autoFocus]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function start(e: RPointerEvent, mode: "move" | "resize") {

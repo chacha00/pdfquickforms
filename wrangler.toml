@@ -8,7 +8,7 @@ compatibility_flags = ["nodejs_compat"]
 binding = "DB"
 database_name = "pdfquick-forms"
 # Replace with the id printed by: npx wrangler d1 create pdfquick-forms
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "88c0f8a2-4be2-4115-8672-822c14d0cc7c"
 migrations_dir = "migrations"
 
 # Non-secret settings. Secrets (STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, LICENSE_SECRET,
@@ -17,5 +17,5 @@ migrations_dir = "migrations"
 PAYMENTS_ENABLED = "false"
 # Stripe as merchant of record (tax, fraud, disputes). Requires accepting Managed Payments terms in the Dashboard.
 STRIPE_MANAGED_PAYMENTS = "true"
-PUBLIC_ORIGIN = "https://forms.pdfquick.app"
+PUBLIC_ORIGIN = "https://pdfquick-forms.pages.dev"
 EMAIL_FROM = ""

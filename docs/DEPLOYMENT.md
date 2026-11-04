@@ -33,7 +33,7 @@ npx wrangler pages deploy dist --project-name pdfquick-forms
 
 ## Domain
 Pages project → Custom domains → add for example `forms.yourdomain.com`. It's a CNAME to `<project>.pages.dev`, created automatically if the DNS is on Cloudflare.
-If your domain isn't `forms.pdfquick.app`, change `site.origin` in `src/content/site.json` and the sitemap line in `public/robots.txt`, then rebuild. Canonical URLs and the sitemap are derived from these.
+If your domain isn't `pdfquick-forms.pages.dev`, change `site.origin` in `src/content/site.json` and the sitemap line in `public/robots.txt`, then rebuild. Canonical URLs and the sitemap are derived from these.
 
 ## Monitoring
 - Cloudflare Web Analytics (cookie-less). If you enable it, add its domains to the CSP and update the privacy policy.

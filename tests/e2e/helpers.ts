@@ -72,7 +72,9 @@ export async function clickAt(page: Page, pageNo: number, xPt: number, yPt: numb
 /** Choose a tool from the editor sidebar and place it. */
 export async function place(page: Page, tool: string, pageNo: number, x: number, y: number, pageWidthPt = 612) {
   await page.getByRole("complementary", { name: "Tools and pages" }).getByRole("button", { name: tool, exact: true }).click();
+  const before = await page.getByTestId("form-element").count();
   await clickAt(page, pageNo, x, y, pageWidthPt);
+  await expect(page.getByTestId("form-element")).toHaveCount(before + 1);
 }
 
 export function trackConsoleErrors(page: Page): string[] {

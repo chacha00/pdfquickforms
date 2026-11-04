@@ -10,7 +10,7 @@ test.describe("SEO", () => {
     test(`${path} is prerendered with unique metadata`, async ({ request }) => {
       const html = await (await request.get(path)).text();
       expect(html).toMatch(/<title>[^<]{20,}<\/title>/);
-      expect(html).toContain(`<link rel="canonical" href="https://forms.pdfquick.app${path}" />`);
+      expect(html).toContain(`<link rel="canonical" href="https://pdfquick-forms.pages.dev${path}" />`);
       expect(html).toMatch(/<meta name="description" content="[^"]{40,}"/);
       expect(html).toMatch(/<h1>[^<]+<\/h1>/);
     });
@@ -30,9 +30,9 @@ test.describe("SEO", () => {
 
   test("sitemap and robots; editor is noindex", async ({ request }) => {
     const xml = await (await request.get("/sitemap.xml")).text();
-    for (const p of indexable) expect(xml).toContain(`<loc>https://forms.pdfquick.app${p}</loc>`);
+    for (const p of indexable) expect(xml).toContain(`<loc>https://pdfquick-forms.pages.dev${p}</loc>`);
     expect(xml).not.toContain("/editor");
-    expect(await (await request.get("/robots.txt")).text()).toContain("Sitemap: https://forms.pdfquick.app/sitemap.xml");
+    expect(await (await request.get("/robots.txt")).text()).toContain("Sitemap: https://pdfquick-forms.pages.dev/sitemap.xml");
     expect(await (await request.get("/editor")).text()).toContain('<meta name="robots" content="noindex" />');
   });
 });
