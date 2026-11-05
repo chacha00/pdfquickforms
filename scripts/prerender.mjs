@@ -11,7 +11,15 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const dist = join(root, "dist");
 const data = JSON.parse(readFileSync(join(root, "src", "content", "site.json"), "utf8"));
-const template = readFileSync(join(dist, "index.html"), "utf8");
+// The Google AdSense loader sits in index.html's <head>, so every generated page carries it.
+// Test builds set STRIP_AD_LOADER=1 so no real ad network is contacted during e2e runs.
+const AD_LOADER = /[ \t]*<script async src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^"]*"\s+crossorigin="anonymous"><\/script>\n?/;
+let template = readFileSync(join(dist, "index.html"), "utf8");
+if (process.env.STRIP_AD_LOADER === "1") {
+  template = template.replace(AD_LOADER, "");
+  writeFileSync(join(dist, "index.html"), template);
+}
+const hasAdLoader = AD_LOADER.test(template);
 const origin = data.site.origin;
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const ld = (o) => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, "\\u003c")}</script>`;
@@ -157,14 +165,14 @@ writeFileSync(
     .join("\n")}\n</urlset>\n`,
 );
 
-// Extend CSP for AdSense only when a client ID is configured at build time.
-if (process.env.VITE_ADSENSE_CLIENT) {
+// Extend CSP for AdSense when the loader is in the page head or a client ID is configured.
+if (hasAdLoader || process.env.VITE_ADSENSE_CLIENT) {
   const p = join(dist, "_headers");
   const h = readFileSync(p, "utf8")
     .replace("script-src 'self'", "script-src 'self' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.google.com https://*.gstatic.com https://*.doubleclick.net https://*.adtrafficquality.google")
     .replace("frame-src 'self'", "frame-src 'self' https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com")
     .replace("img-src 'self'", "img-src 'self' https:")
-    .replace("connect-src 'self'", "connect-src 'self' https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net https://*.adtrafficquality.google");
+    .replace("; connect-src 'self'", "; connect-src 'self' https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net https://*.adtrafficquality.google");
   writeFileSync(p, h);
   console.log("Ads enabled: extended CSP in dist/_headers");
 }

@@ -38,5 +38,6 @@ export default defineConfig({
     url: `${TEST_ORIGIN}/api/products`,
     reuseExistingServer: false,
     timeout: 240_000,
+    env: { STRIP_AD_LOADER: "1" },
   },
 });

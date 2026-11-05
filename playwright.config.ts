@@ -19,11 +19,12 @@ export default defineConfig({
   ],
   webServer: {
     // Production build + production security headers. Ad *placeholders* are enabled
-    // so placement rules can be tested; no real ad network is ever contacted.
+    // so placement rules can be tested. STRIP_AD_LOADER removes the AdSense
+    // <head> tag so no real ad network is ever contacted.
     command: `npm run build && npx vite preview --port ${PORT} --strictPort`,
     url: `http://localhost:${PORT}`,
     reuseExistingServer: false,
     timeout: 180_000,
-    env: { VITE_AD_PLACEHOLDERS: "1" },
+    env: { VITE_AD_PLACEHOLDERS: "1", STRIP_AD_LOADER: "1" },
   },
 });

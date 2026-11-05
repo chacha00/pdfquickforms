@@ -47,7 +47,7 @@ export function Privacy() {
       <ul className="list-disc pl-5">
         <li><strong>Hosting logs:</strong> our hosting provider processes standard request data (IP address, browser type, pages requested) to deliver and protect the site. These requests never contain your documents.</li>
         <li><strong>Usage statistics (if enabled):</strong> anonymous events such as “form downloaded” or “error”, with counts. Never document text, form answers, file names or signatures.</li>
-        <li><strong>Advertising (if enabled):</strong> see the <Link className="text-primary underline" to="/cookies">cookie policy</Link> and <Link className="text-primary underline" to="/advertising">advertising disclosure</Link>. Ads are only loaded after you allow them.</li>
+        <li><strong>Advertising (if enabled):</strong> see the <Link className="text-primary underline" to="/cookies">cookie policy</Link> and <Link className="text-primary underline" to="/advertising">advertising disclosure</Link>. Google's ad script is included on every page. It never receives your documents.</li>
       </ul>
       <p>We don't have accounts, so we don't collect names, email addresses or passwords.</p>
       <h2>Optional purchases</h2>
@@ -97,14 +97,16 @@ export function Cookies() {
       <ul className="list-disc pl-5">
         <li><strong>Saved projects</strong> (IndexedDB) — only when you click Save project.</li>
         <li><strong>Your license keys</strong> (localStorage key <code>pdfquick-forms:licenses</code>) — only if you buy a premium pack.</li>
-        <li><strong>Your advertising choice</strong> (localStorage key <code>pdfquick-forms:ad-consent</code>) — only when ads are enabled and you make a choice.</li>
+        <li><strong>Your advertising choice</strong> (localStorage key <code>pdfquick-forms:ad-consent</code>) — only when ad spaces are enabled and you make a choice.</li>
       </ul>
       <p>PDFQuick Forms itself sets no tracking cookies.</p>
       <h2>Advertising cookies</h2>
       <p>
+        This site uses Google AdSense. Google's ad script is included on every page, and Google may set or read cookies when it loads. In the EEA, UK and Switzerland,
+        Google asks for your consent before using cookies for personalized ads.{" "}
         {AD_CLIENT
-          ? "This site may show ads from Google AdSense on informational pages. Google's ad script — and its cookies — are loaded only after you choose “Allow ads”. If you choose “No ads cookies”, the ad script is not loaded."
-          : "Advertising is not enabled on this site at the moment, so no advertising cookies are set."}{" "}
+          ? "Our own ad spaces on informational pages are only filled after you choose “Allow ads”; if you choose “No ads cookies”, they stay empty."
+          : "No ad spaces are switched on yet."}{" "}
         See <a className="text-primary underline" href="https://policies.google.com/technologies/ads" rel="noopener noreferrer" target="_blank">how Google uses cookies in advertising</a>.
       </p>
       {AD_CLIENT && (

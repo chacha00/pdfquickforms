@@ -57,6 +57,8 @@ let scriptPromise: Promise<void> | null = null;
 export function loadAdScript(): Promise<void> {
   if (!AD_CLIENT) return Promise.reject(new Error("Ads not configured"));
   scriptPromise ??= new Promise((resolve, reject) => {
+    // The loader is already in every page's <head>; reuse it instead of loading it twice.
+    if (document.querySelector('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')) return resolve();
     const s = document.createElement("script");
     s.async = true;
     s.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(AD_CLIENT!)}`;
